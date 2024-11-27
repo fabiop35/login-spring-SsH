@@ -34,7 +34,7 @@ public class LoginController {
         loggedIn = loginProcessor.login();
 
         if (loggedIn) {
-            // model.addAttribute("message", "You are now logged in.");
+             model.addAttribute("message", "You are now logged in.");
             return "redirect:/main";
         }
         model.addAttribute("message", "Login failed!");
